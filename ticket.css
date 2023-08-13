@@ -1,0 +1,314 @@
+:root {
+  --Mobile : 576px;
+  --Tablet : 48rem; 
+  --Laptop : 62rem;
+  --Desktop : 75rem;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100vw;
+  background-image: linear-gradient(to top,transparent, #447aa3);
+  background-size: cover;
+}
+
+.navlist a { text-decoration: none; color:#89cff0; }
+.navlist a:visited { text-decoration: none; }
+
+/*Main heading*/
+.content h1{
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  font-size: 400%;
+  text-align: center;
+  line-height: 125%;
+  margin-top: -15%;
+}
+
+.content h1 span{
+  -webkit-text-fill-color: transparent;
+  font-size: 100%;
+}
+
+.topic2 {
+  font-size: 60% ;
+}
+
+.backk {
+  align-self: flex-start;
+  background-color:#447aa3 ;
+  color: #ffffff;
+  font-size: 110%;
+  padding-left: 1%;
+  padding-top:  1%;
+}
+
+.backk a { text-decoration: none; color:#ffffff; }
+.backk a:visited { text-decoration: none; }
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+
+  .footer {
+    background-color: #447aa3;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin-top: 110px;
+}
+
+.footer h5 {
+    color: rgb(255, 255, 255);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left:10px ;
+    letter-spacing: 0.5008px;
+    text-align: center;
+}
+
+#bookingMain {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  scale: 102%;
+  margin: 2%;
+}
+
+#booking1 {
+  margin: 5px;
+  margin-right: 1%;
+  float: left;
+  width: 30vw;
+  background-color:  #e6f6fe;
+  padding-bottom: 3cqb;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#booking2 {
+  margin: 5px;
+  width: 30vw;
+  background-color:  #e6f6fe;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#booking3 {
+  margin: 5px;
+  float: left;
+  width: 35vw;
+  background-color:  #e6f6fe;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+#booking4 {
+  margin: 5px;
+  width: 40vw;
+  background-color:  #e6f6fe;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#booking5 {
+  margin: 5px;
+  float: left;
+  width: 40vw;
+  background-color:  #e6f6fe;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+#booking6 {
+  margin: 5px;
+  float: left;
+  width: 40vw;
+  background-color:  #e6f6fe;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#booking7 {
+  margin: 5px;
+  width: 40vw;
+  background-color:  #e6f6fe;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.summaryP {
+  margin-top: 2%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f589e;
+  text-align: center;
+}
+
+.BookingSummaryFINAL {
+  width: 60%;
+  font-size: 16px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+  margin-bottom: 2%;
+  color: #3f589e;
+  font-weight: 600;
+}
+
+.BookingSummaryFINAL td {
+  border: 2px solid #e6f6fe;
+  background-color: #c1e4f4;
+  padding: 1.5%;
+}
+
+/*Prices table*/
+.prices tr,td,th {
+  border: 3px solid #e6f6fe ;
+  color:#06257a
+}
+
+.prices {
+  margin: 2%;
+  width: 26vw;
+  text-align: left;
+  margin-left: 4%;
+  margin-right: 3%;
+  margin-top: 5%;
+  color:#06257a;
+  font-size: 15px;
+}
+
+.desc strong {
+  font-size: 18px;
+  color:#06257a;
+  padding: 15px;
+}
+
+.desc {
+  padding: 8px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  color:#06257a;
+}
+
+#headd {
+  text-align: left;
+}
+
+/*Form styles*/
+form {
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  color:#06257a;
+  font-weight: 400;
+}
+
+form .fields .input-field {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 500;
+  color:#06257a;
+}
+
+form input {
+  border-radius: 0.5rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #06257a;
+  outline: none;
+  border: 0.0625rem solid #06257a;
+  padding: 0 0.9375rem;
+  padding-right: 5px;
+}
+
+#countryCode , #gender {
+  border-radius: 0.5rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #06257a;
+  outline: none;
+  border: 0.0625rem solid #06257a;
+  padding: 0 0.9375rem;
+  padding-right: 5px;
+  width: 10vw;
+}
+
+.heading {
+  font-size: 50px;
+}
+
+form select {
+  width: 13rem;
+  border-radius: 0.6rem;
+  font-size: 13px;
+  font-weight: 400;
+  color: #06257a;
+  outline: none;
+  border: 0.0625rem solid #06257a;
+  margin-top: 2%;
+  padding: 0.9375rem;
+}
+
+button {
+  padding: 2%;
+  background-color: white;
+  color: #06257a;
+}
+
+.SumTable {
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+#submitButton {
+  width: 15vw;
+  font-weight: 600;
+}

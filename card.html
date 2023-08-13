@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ticket.css">
+<title>Turtle Hatchery Booking</title>
+<!--Fonts from Google fonts are linked here-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="homecover"></div>
+    <h3 class="backk"> &lt; BACK <a href="/Hikkaduwa.html"></a></h3>
+    <div class="wrapper">
+        <div class="content">
+            <h1>BUY TICKETS <br> <span> <h2 class="topic2">DETAILS PAGE</h2> </span></h1>
+        </div>
+    </div>
+<div id="bookingMain">
+  <div id="booking6">  
+  <form id="creditCardForm">
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" maxlength="16" pattern="\d*" required><br><br>
+    
+    <label for="expiryDate">Expiry Date (YY/MM):</label>
+    <input type="text" id="expiryDate" pattern="\d{2}/\d{2}" required><br><br>
+    
+    <label for="cvv">CVV/CVC Number:</label>
+    <input type="text" id="cvv" maxlength="4" pattern="\d*" required><br><br>
+    
+    <label for="cardHolder">Card Holder's Name:</label>
+    <input type="text" id="cardHolder" required><br><br>
+    
+    <button id="submitButton" type="submit" disabled>PAY $</button>
+  </form>
+</div>
+
+  <div id="booking7">
+    <div id="summaryTable">
+      <!-- Table content will be inserted here -->
+    </div>
+  </div>
+</div>
+  <!--Footer-->
+  <footer class="footer"> 
+    <h5>2023 All rights reserved. Turtles hatcheries SL</h5>
+  </footer>
+  <script src="card.js"></script>
+</body>
+</html>

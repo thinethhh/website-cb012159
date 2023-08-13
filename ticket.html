@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Booking Page</title>
+  <link rel="stylesheet" href="ticketstyle.css">
+</head>
+
+<body>
+  <div class="ticket-container">
+    <div class="cover-page">
+      <h1>Buy Tickets</h1>
+    </div>
+
+    <form id="ticket-form">
+      <div class="calendar">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="guests">
+        <h2>Guests</h2>
+        <div class="ticket-category">
+          <label for="sl-adult">SL Adult:</label>
+          <input type="number" id="sl-adult" name="sl-adult" min="0" value="0" required>
+        </div>
+        <div class="ticket-category">
+          <label for="sl-child">SL Child:</label>
+          <input type="number" id="sl-child" name="sl-child" min="0" value="0" required>
+        </div>
+        <div class="ticket-category">
+          <label for="foreigner-adult">Foreigner Adult:</label>
+          <input type="number" id="foreigner-adult" name="foreigner-adult" min="0" value="0" required>
+        </div>
+        <div class="ticket-category">
+          <label for="foreigner-child">Foreigner Child:</label>
+          <input type="number" id="foreigner-child" name="foreigner-child" min="0" value="0" required>
+        </div>
+        <div class="ticket-category">
+          <label for="infant">Infant:</label>
+          <input type="number" id="infant" name="infant" min="0" value="0" required>
+        </div>
+      </div>
+
+      <div class="duration">
+        <label for="duration">Select Duration:</label>
+        <select id="duration" name="duration" required>
+          <option value="07.00 am - 08.00 am">07.00 am - 08.00 am</option>
+          <option value="08.00 am - 09.00 am">08.00 am - 09.00 am</option>
+          <!-- Add all duration options here -->
+        </select>
+      </div>
+
+      <div class="summary-table" id="summary-table">
+        <!-- Summary table will be dynamically generated here -->
+      </div>
+
+      <div class="continue-purchase">
+        <button id="continue-btn" type="submit" disabled>Continue with purchase</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="mains.js"></script>
+</body>
+
+</html>

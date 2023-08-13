@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="ticket.css">
+<title>Turtle Hatchery Booking</title>
+<!--Fonts from Google fonts are linked here-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="homecover"></div>
+  <h3 class="backk"> &lt; BACK <a href="/Hikkaduwa.html"></a></h3>
+  <div class="wrapper">
+      <div class="content">
+          <h1>BUY TICKETS <br> <span> <h2 class="topic2">TICKETS PAGE</h2> </span></h1>
+      </div>
+  </div>
+  <div id="bookingMain">
+  <div id="booking1">
+  <form id="bookingForm">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" required onchange="validateDate()" ><span id="dateError" class="error"></span><br><br>
+    
+    <label for="adultSL">SL Adult:</label>
+    <input type="number" id="adultSL" min="0" value="0"><br>
+    
+    <label for="childSL">SL Child:</label>
+    <input type="number" id="childSL" min="0" value="0"><br>
+    
+    <label for="adultForeign">Foreign Adult:</label>
+    <input type="number" id="adultForeign" min="0" value="0"><br>
+    
+    <label for="childForeign">Foreign Child:</label>
+    <input type="number" id="childForeign" min="0" value="0"><br>
+    
+    <label for="infant">Infant:</label>
+    <input type="number" id="infant" min="0" value="0"><br><br>
+    
+    <label for="timeSlots">Select Time Slots:</label><br>
+    <label><input type="checkbox" value="7.00am - 8.00am" onchange="updateBookingSummary()"> 7am - 8am</label><br>
+    <label><input type="checkbox" value="8.00am - 9.00am" onchange="updateBookingSummary()"> 8am - 9am</label><br>
+    <label><input type="checkbox" value="9.00am - 10.00am" onchange="updateBookingSummary()"> 9am - 10am</label><br>
+    <label><input type="checkbox" value="10.00am - 11.00am" onchange="updateBookingSummary()"> 10am - 11am (Peak)</label><br>
+    <label><input type="checkbox" value="11.00am - 12.00pm" onchange="updateBookingSummary()"> 11am - 12pm (Peak)</label><br>
+    <label><input type="checkbox" value="12.00pm - 1.00pm" onchange="updateBookingSummary()"> 12pm - 1pm (Peak)</label><br>
+    <label><input type="checkbox" value="1.00pm - 2.00pm" onchange="updateBookingSummary()"> 1pm - 2pm</label><br>
+    <label><input type="checkbox" value="2.00pm - 3.00pm" onchange="updateBookingSummary()"> 2pm - 3pm</label><br>
+    <label><input type="checkbox" value="3.00pm - 4.00pm" onchange="updateBookingSummary()"> 3pm - 4pm (Peak)</label><br>
+    <label><input type="checkbox" value="4.00pm - 5.00pm" onchange="updateBookingSummary()"> 4pm - 5pm (Peak)</label><br>
+    <label><input type="checkbox" value="5.00pm - 6.00pm" onchange="updateBookingSummary()"> 5pm - 6pm (Peak)</label><br><br>
+
+    <button id="calculateButton" disabled>Continue with purchase</button>
+  </form>
+</div>  
+
+<div id="booking2">
+  <table class="prices">
+    <tr>
+        <th>Category</th>
+        <th>Time</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Foreign Adult</td>
+        <td>Normal hour</td>
+        <td>$10</td>
+    </tr>
+    <tr>
+        <td>Foreign Adult</td>
+        <td>Peak hour</td>
+        <td>$13</td>
+    </tr>
+    <tr>
+        <td>Foreign Child</td>
+        <td>Normal hour</td>
+        <td>$5</td>
+    </tr>
+    <tr>
+        <td>Foreign Child</td>
+        <td>Peak hour</td>
+        <td>$8</td>
+    </tr>
+    <tr>
+        <td>SL Adult</td>
+        <td>Normal hour</td>
+        <td>$4</td>
+    </tr>
+    <tr>
+        <td>SL Adult</td>
+        <td>Peak hour</td>
+        <td>$6</td>
+    </tr>
+    <tr>
+        <td>SL Child</td>
+        <td>Normal hour</td>
+        <td>$2</td>
+    </tr>
+    <tr>
+        <td>SL Child</td>
+        <td>Peak hour</td>
+        <td>$3</td>
+    </tr>
+    <tr>
+        <td>Infant (Under 4)</td>
+        <td>Any hour</td>
+        <td>$0</td>
+    </tr>
+</table>
+</div>
+ 
+<div id="booking3">
+  <div id="bookingSummary">
+    <table>
+      <tr><th colspan="2" id="headd">Booking Summary</th></tr>
+      <tr><td>Date</td><td colspan="2">No date picked</td></tr>
+      <tr><td>Duration</td><td colspan="2">0 hours</td></tr>
+      <tr><td>Total</td><td>$ 0</td></tr>
+    </table>
+  </div>
+</div>
+</div>
+  <script src="booking.js"></script>
+  <!--Footer-->
+  <footer class="footer"> 
+    <h5>2023 All rights reserved. Turtles hatcheries SL</h5>
+  </footer>
+</body>
+</html>
